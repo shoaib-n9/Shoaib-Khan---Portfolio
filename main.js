@@ -47,20 +47,10 @@ const sr = ScrollReveal({
 
 /* ------- DOWNLOAD RESUME BUTTON ---------- */
 
-/*
-document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.btn');
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-            const driveURL = 'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link'; // Replace YOUR_FILE_ID
-            window.open(driveURL, '_blank'); // Opens the link in a new tab
-        });
-    });
-});
-*/
-document.querySelector('.downloadResume').addEventListener('click', () => {
-  // Replace the URL below with your Google Drive resume link
-  window.open('https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link', '_blank');
+document.querySelector('.downloadResume').addEventListener('click', function() {
+    // Replace with your Google Drive file link
+    const googleDriveUrl = 'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link';
+    window.location.href = googleDriveUrl; // Redirects to the resume PDF on Google Drive
 });
 
 
