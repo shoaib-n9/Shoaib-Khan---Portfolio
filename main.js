@@ -58,6 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 */
+document.querySelector('.btn').addEventListener('click', () => {
+  // Replace the URL below with your Google Drive resume link
+  window.open('https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link', '_blank');
+});
+
 
 
 /* -- HOME -- */
