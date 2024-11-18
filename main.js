@@ -47,6 +47,7 @@ const sr = ScrollReveal({
 
 /* ------- DOWNLOAD RESUME BUTTON ---------- */
 
+/*
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
+*/
 
 
 /* -- HOME -- */
