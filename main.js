@@ -47,10 +47,12 @@ const sr = ScrollReveal({
 
 /* ------- DOWNLOAD RESUME BUTTON ---------- */
 
-document.getElementById('downloadResume').addEventListener('click', function () {
+
+document.querySelector('.download-resume').addEventListener('click', function () {
     const driveURL = 'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link'; // Replace YOUR_FILE_ID
-    window.location.href = driveURL;
+    window.open(driveURL, '_blank'); // Opens the link in a new tab
 });
+
 
 
 /* -- HOME -- */
