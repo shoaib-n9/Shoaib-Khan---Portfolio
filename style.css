@@ -51,6 +51,25 @@ html{
 /* ---##-- REUSABLE CSS --##--- */
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
+
+
+.downloadResume{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.downloadResume>i{
+    margin-left: 10px;
+}
+.downloadResume:hover{
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
 .btn{
     font-weight: 500;
     padding: 12px 20px;
