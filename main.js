@@ -51,7 +51,7 @@ document
   .addEventListener('click', function () {
     // Replace with your Google Drive file link
     const googleDriveUrl =
-      'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link';
+      'https://drive.google.com/file/d/1WZ3Hr0TzaC1Hro2z8dvxuEzPZfazsmFs/view?usp=share_link';
     window.open(googleDriveUrl, '_blank'); // Redirects to the resume PDF on Google Drive
   });
 
