@@ -45,15 +45,37 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-/* ------- DOWNLOAD RESUME BUTTON ---------- */
-
-document.querySelector('.downloadResume').addEventListener('click', function() {
+/**------------ download resume button  ----------------- */
+document
+  .querySelector('.downloadResume')
+  .addEventListener('click', function () {
     // Replace with your Google Drive file link
-    const googleDriveUrl = 'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link';
-    window.location.href = googleDriveUrl; // Redirects to the resume PDF on Google Drive
+    const googleDriveUrl =
+      'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link';
+    window.open(googleDriveUrl, '_blank'); // Redirects to the resume PDF on Google Drive
+  });
+
+document
+  .querySelector('.downloadResume2')
+  .addEventListener('click', function () {
+    // Replace with your Google Drive file link
+    const googleDriveUrl =
+      'https://drive.google.com/file/d/19tVs2hNf_bYCA2GsOsggfXzxPZxM2DLw/view?usp=share_link';
+    window.open(googleDriveUrl, '_blank'); // Redirects to the resume PDF on Google Drive
+  });
+
+/* -- HIRE ME BUTTON -- */
+
+// Adding the event listener to the button
+document.querySelector('.hireme').addEventListener('click', function () {
+  // Create the mailto link with a pre-filled subject
+  const email = 'shoaibsk@recrewa.ac.in'; // Replace with your email
+  const subject = 'Interested in Hiring';
+  const body = 'Hi, I am interested in hiring you for a project.'; // Optional message body
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
 });
-
-
 
 /* -- HOME -- */
 sr.reveal('.featured-text-card', {});
